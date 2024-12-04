@@ -10,6 +10,26 @@ def createauto(m,n):
     return lst
 
 
+def massiv(lst):
+    lstmx = []
+    for i in range(len(lst)):
+        mx = max([max(x) for x in lst[i]])
+    for j in range(len(lst)):
+        lstmx.append([])
+        for g in range(len(lst[j])):
+            lstmx[j].append(lst[j][g]/mx)
+    return lstmx
+
+
+def num_massiv(lst):
+    lst_num = []
+    for i in range(len(lst)):
+        for j in lst[i]:
+            if j == 10:
+                lst_num.append(i)
+    return lst_num
+
+
 def createhands(m,n):
     lst = []
     for i in range(m):
@@ -37,12 +57,13 @@ def menu2():
 
 
 def menu3():
-    lst1 = [1, 2, 3, 4,5]
+    lst1 = [1, 2, 3, 4, 5, 6]
     lst2 = ['Получить новый массив путем деления всех элементов данного массива на ее больший по модулю элемент',
             "Вывести номера тех строк массива, в которых есть хотя бы один элемент, равный 10.",
             "Сделать функцию, меняющую местами элементы матрицы симметрично побочной диагонали",
-            "Составить программу вычисления суммы тех положительных элементов двумерного массива А, которые стоят в строках, не содержащих нулевых элементов.",
-            "Удалить из массива строку и столбец, на пересечении которых расположен минимальный элемент."]
+            "Вычисление суммы тех положительных элементов двумерного массива А, которые стоят в строках, не содержащих нулевых элементов.",
+            "Удалить из массива строку и столбец, на пересечении которых расположен минимальный элемент",
+            "Назад"]
     for i in range(len(lst1)):
         print(lst1[i], ' - ', lst2[i])
 
@@ -69,7 +90,7 @@ def main():
                 case 3:
                     print('Доступные функции')
                     menu3()
-                    main3()
+                    main3(lst)
                 case 4:
                     break
         except ValueError:
@@ -77,12 +98,23 @@ def main():
             continue
 
 
-def main3():
+def main3(lst):
     while True:
         ans = int(input())
         match ans:
             case 1:
+                lstmx =massiv(lst)
+                print(lstmx)
+            case 2:
+                lst_num=num_massiv(lst)
+                print(lst_num)
+            case 3:
                 pass
-
+            case 4:
+                pass
+            case 5:
+                pass
+            case 6:
+                 break
 if __name__ == '__main__':
     main()
