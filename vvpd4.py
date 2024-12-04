@@ -1,6 +1,19 @@
 import random
 
 
+def change(lst):
+    for g in range(len(lst)):
+        if len(lst) == len(lst[g]):
+            for i in range(len(lst)):
+                for j in range(len(lst[i])):
+                    if i != j:
+                        lst[i][j] == lst[j][i]
+            return lst
+        else:
+            print("Матрица должна быть квадратной")
+            return lst
+
+
 def createauto(m,n):
     lst = []
     for i in range(m):
