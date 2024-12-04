@@ -1,6 +1,26 @@
 import random
 
 
+def delet(lst):
+    lst_new = lst
+    for i in range(len(lst)):
+        mn = min([min(x) for x in lst[i]])
+    for i in range(len(lst)):
+        for h in lst[i]:
+            if h == mn:
+                for i in range(len(lst)):
+                    del lst_new[i][lst_new.index(mn)]
+                del lst_new[i]
+    return lst_new
+
+
+def check(lst):
+    sm = []
+    for i in range(len(lst)):
+        if 0 not in lst[i]:
+            sm.append(sum(lst[i]))
+    return sm
+
 def change(lst):
     for g in range(len(lst)):
         if len(lst) == len(lst[g]):
@@ -122,11 +142,14 @@ def main3(lst):
                 lst_num=num_massiv(lst)
                 print(lst_num)
             case 3:
-                pass
+                lst_change = change(lst)
+                print(lst_change)
             case 4:
-                pass
+                sm = check(lst)
+                print(sm)
             case 5:
-                pass
+                lst_new = delet(lst)
+                print(lst_new)
             case 6:
                  break
 if __name__ == '__main__':
