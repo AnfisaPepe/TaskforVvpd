@@ -12,10 +12,10 @@
 7:![image](https://github.com/user-attachments/assets/f5d4fe4a-f2f5-4ad5-9f4f-1050382009c7)
 
 Код для формулы cos
-8:![image](https://github.com/user-attachments/assets/94ea61f9-6e38-4ac6-814f-7ec50f903378) 
+8:![image](https://github.com/user-attachments/assets/94ea61f9-6e38-4ac6-814f-7ec50f903378)
 
 Формула ch
-9:![image](https://github.com/user-attachments/assets/658091a5-cbea-415a-bad6-520b75b03ef6) 
+9:![image](https://github.com/user-attachments/assets/658091a5-cbea-415a-bad6-520b75b03ef6)
 
 Код для формулы ch
 10: ![image](https://github.com/user-attachments/assets/0dd9e718-7e8f-4992-8046-dcbd17815194)
