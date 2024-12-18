@@ -2,6 +2,7 @@ from cosx import *
 
 
 def main():
+    """Меню для функций"""
     while True:
         try:
             x = float(input('Введите желаемый x(n = 100): '))
@@ -19,7 +20,7 @@ def main():
                 case 3:
                     if -1 < x < 1:
                         m = int(input("Введите параметр m: "))
-                        c = pow((1-x),m)
+                        c = pow((1 - x), m)
                         print(c)
                     else:
                         print('x должен входить в диапозон (-1,1)')
